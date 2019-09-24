@@ -16,9 +16,11 @@ public class Charact {
     Long earring;
     String buildname;
 
-    Charact(){}
+    public Charact(){
+        super();
+    }
 
-    Charact(Long ring,Long necklace,Long earring, String buildname){
+    public Charact(Long ring,Long necklace,Long earring, String buildname){
         this.ring = ring;
         this.necklace = necklace;
         this.earring = earring;
