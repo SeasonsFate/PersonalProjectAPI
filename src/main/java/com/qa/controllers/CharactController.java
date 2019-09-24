@@ -30,7 +30,16 @@ public class CharactController {
         Charact existing = charactRepository.findOne(id);
         charactRepository.delete(id);
         return existing;
-
-
     }
+
+    @PutMapping(value = "character/{id}")
+    public Charact updateCharacter(@RequestBody Charact newCharacter, @PathVariable Long id){
+        Charact oldCharacter = charactRepository.findOne(id);
+        oldCharacter.setBuildname(newCharacter.getBuildname());
+        oldCharacter.setEarring(newCharacter.getEarring());
+        oldCharacter.setNecklace(newCharacter.getNecklace());
+        oldCharacter.setRing(newCharacter.getRing());
+        return charactRepository.saveAndFlush(oldCharacter);
+    }
+
 }
