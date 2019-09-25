@@ -17,6 +17,17 @@ public class Item {
     Long ap;
     Long dp;
 
+    public Item(){
+        super();
+    }
+
+    public Item(Long type, String name, Long ap, Long dp){
+        this.type = type;
+        this.name = name;
+        this.ap = ap;
+        this.dp = dp;
+    }
+
     public long getAp() {
         return ap;
     }
