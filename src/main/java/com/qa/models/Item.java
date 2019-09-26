@@ -10,12 +10,12 @@ public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    Long id;
-    Long type; // Ring = 1, Earring = 2, Necklace = 3
-    String name;
+    private Long id;
+    private Long type; // Ring = 1, Earring = 2, Necklace = 3
+    private String name;
 // look at relations in springboot
-    Long ap;
-    Long dp;
+    private Long ap;
+    private Long dp;
 
     public long getAp() {
         return ap;

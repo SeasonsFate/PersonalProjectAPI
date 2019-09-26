@@ -10,11 +10,11 @@ public class Charact {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    Long id;
-    Long ring;
-    Long necklace;
-    Long earring;
-    String buildname;
+    private Long id;
+    private Long ring;
+    private Long necklace;
+    private Long earring;
+    private String buildname;
 
     public String getBuildname() {
         return buildname;
